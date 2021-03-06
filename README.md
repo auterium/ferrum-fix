@@ -2,6 +2,7 @@
 # Fasters
 
 [![Crates.io](https://img.shields.io/crates/v/fasters)](https://crates.io/crates/fasters)
+[![CircleCI](https://circleci.com/gh/neysofu/ferrum-fix/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/neysofu/ferrum-fix/tree/circleci-project_setup)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat)](https://github.com/clap-rs/clap/blob/master/LICENSE-MIT)
 [![Open issues](https://img.shields.io/github/issues-raw/neysofu/fasters)](https://img.shields.io/github/issues-raw/neysofu/fasters)
 [![matrix.org](https://img.shields.io/badge/matrix.org-%23fasters-blue)](https://matrix.to/#/#fasters:matrix.org)
