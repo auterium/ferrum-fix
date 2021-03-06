@@ -15,5 +15,5 @@ jobs:
     ####   /go/src/bitbucket.org/circleci/go-tool
     working_directory: /usr/src/github.com/neysofu/ferrum-fix
     steps:
-      - test
+      - checkout
       - run: cargo test
