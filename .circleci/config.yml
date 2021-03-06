@@ -1,0 +1,19 @@
+steps:
+  - label: "Example Test"
+    command: echo "Hello!"
+
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version
+      - image: rust:latest
+
+    #### TEMPLATE_NOTE: go expects specific checkout path representing url
+    #### expecting it in the form of
+    ####   /go/src/github.com/circleci/go-tool
+    ####   /go/src/bitbucket.org/circleci/go-tool
+    working_directory: /usr/src/github.com/neysofu/ferrum-fix
+    steps:
+      - test
+      - run: cargo test
