@@ -19,6 +19,10 @@ name = "fefix"
 name = "fix_decode"
 harness = false
 
+[[bench]]
+name = "tokio_integration"
+harness = false
+
 [features]
 default = ["expose_openssl", "expose_tokio", "chrono_time"]
 fix40 = []
@@ -86,6 +90,10 @@ quickcheck = "1"
 quickcheck_derive = "0.3"
 quickcheck_macros = "1"
 syn = { version = "1", features = ["parsing"] }
+tokio = { version = "1.5.0", features = ["full"] }
+bytes = "1.0.1"
+futures-util = { version = "0.3.8", default-features = false, features = ["sink", "std"] }
+tokio-util = { version = "0.6.5", features = ["codec", "compat"] }
 
 # Dirty hack to enable all features for tests.
 # https://github.com/rust-lang/cargo/issues/2911#issuecomment-749580481
